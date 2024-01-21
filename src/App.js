@@ -21,9 +21,7 @@ function App() {
               </div>
               <div>
                 <p>PhishER is the key ingredient of an essential security workstream. It's your lightweight Security Orchestration, Automation and Response (SOAR) platform to orchestrate your threat response and manage the high volume of potentially malicious email messages reported by your users.  And, with automatic prioritization of emails, PhishER helps your InfoSec and Security Operations team cut through the inbox noise and respond to the most dangerous threats more quickly.</p>
-
                 <p>Additionally, with PhishER you are able to automate the workstream of the 90% of reported emails that are not threats. Incident Response (IR) orchestration can easily deliver immediate efficiencies to your security team, but the potential value is much greater than that.</p>
-
                 <p>With the right strategy and planning, your organization can build a fully orchestrated and intelligent SOC that can contend with today’s threats. PhishER enables a critical workstream to help your IR teams work together to mitigate the phishing threat and is suited for any organization that wants to automatically prioritize and manage potentially malicious messages - accurately and fast! PhishER is available as a stand-alone product or as an add-on option for current KnowBe4 customers.</p>
               </div>
               <ButtonLink 

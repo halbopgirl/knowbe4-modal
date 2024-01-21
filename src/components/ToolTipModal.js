@@ -1,4 +1,5 @@
-import { useHover } from '@uidotdev/usehooks';
+
+import { useHover } from "../../node_modules/@uidotdev/usehooks";
 import PropTypes from "prop-types";
 
 const ToolTipModal = (props) => {
@@ -6,7 +7,7 @@ const ToolTipModal = (props) => {
 
     return (
         <div>
-        <div ref={ref}><p>Tooltip Modal</p></div>
+        <div className="tooltip-label" ref={ref}><p>Tooltip Modal</p></div>
             {showTooltipModal ? 
                 <div className={props.darkMode ? "tooltip-modal dark-mode" : "tooltip-modal"}>
                     <div className="little-square" />
@@ -24,7 +25,7 @@ const ToolTipModal = (props) => {
 ToolTipModal.propTypes = {
     header: PropTypes.string.isRequired,
     content: PropTypes.node.isRequired,
-    darkMode: PropTypes.string
+    darkMode: PropTypes.bool
 }
 
 export default ToolTipModal;

@@ -18,7 +18,7 @@ const PopupModal = (props) => {
             <button className="popup-modal-button" onClick={e => {showModal()}}>Open Popup Modal</button>
             {shownModal ? 
                 <div className={props.darkMode ? "popup-modal dark-mode" : "popup-modal"}>
-                    <button className="close-button" onClick={e => {closeModal()}}>X</button>
+                    <button className="close-button" data-testid="close-button" onClick={e => {closeModal()}}>X</button>
                     <div className="popup-modal-content">
                         <h1>{props.header}</h1>
                         <div>{props.content}</div>
@@ -33,7 +33,7 @@ const PopupModal = (props) => {
 PopupModal.propTypes = {
     header: PropTypes.string.isRequired,
     content: PropTypes.node.isRequired,
-    darkMode: PropTypes.string
+    darkMode: PropTypes.bool
 }
 
 export default PopupModal;
