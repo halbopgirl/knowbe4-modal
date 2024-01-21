@@ -1,6 +1,6 @@
 
-import { useHover } from "../../node_modules/@uidotdev/usehooks";
 import PropTypes from "prop-types";
+import { useHover } from "@uidotdev/usehooks";
 
 const ToolTipModal = (props) => {
     const [ref, showTooltipModal] = useHover();
