@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ButtonLink = (props) => {
     return (
-        <Link to={props.link}>
+        <Link to={props.link} target="_blank" rel="noopener noreferrer">
             <button className={props.class ? props.class : "button"}>{props.label}</button>
         </Link>
     )
