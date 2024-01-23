@@ -7,9 +7,9 @@ const ToolTipModal = (props) => {
 
     return (
         <div>
-            <div className="tooltip-label" ref={ref}><p>Tooltip Modal</p></div>
+            <div className="tooltip-label" ref={ref} tabindex="0" role="button" aria-pressed="false"><p>Tooltip Modal</p></div>
             {showTooltipModal ? 
-                <div className={props.darkMode ? "tooltip-modal dark-mode" : "tooltip-modal"}>
+                <div className={props.darkMode ? "tooltip-modal dark-mode" : "tooltip-modal"} aria-modal="true">
                     <div className="little-square" />
                     <div className="tooltip-modal-content">
                         <h1 className="tooltip-header">{props.header}</h1>
